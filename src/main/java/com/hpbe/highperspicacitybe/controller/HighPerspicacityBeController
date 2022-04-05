@@ -1,0 +1,12 @@
+package com.hpbe.highperspicacitybe.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HighPerspicacityBeController {
+    @GetMapping("/helloworld")
+    public String hellWorld(Integer id) {
+        return "hellworld" + id;
+    }
+}
